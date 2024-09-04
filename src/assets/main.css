@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --textcolor: #FAFAFA;
+    --background: #181C25;
+    --titleColor: #DFC8A4;
+    --paragraphFont: 'Poppins', sans-serif;
+    --titleFont: 'Bitter', serif;
+    --importantFont: 'Rouge Script', 'cursive';
+}
+
+body,html{
+    margin: 0;
+    background: var(--background);
+    color: var(--textcolor);
+    scroll-behavior: smooth;
+}
+
+hr{
+    border: 0;
+    height: 0.2rem;
+    background: var(--titleColor);
+}
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--titleFont);
+    color: var(--textColor);
+    text-align: center;
+}
+
+h2{
+    font-size: 1.12rem;
+    font-weight: 400;
+    font-family: var(--paragraphFont);
+    color: var(--titleColor);
+    margin: 0.5rem;
+}
+
+h3{
+    font-size: 0.85rem;
+    font-weight: 400;
+    font-family: var(--paragraphFont);
+    color: var(--textcolor);
+}
+
+td{
+    font-size: 1rem;
+    font-family: var(--paragraphFont);
+
+}
+
+p{
+    font-size: 0.8rem;
+    font-family: var(--paragraphFont);
+}
+
+#main{
+    font-family: var(--importantFont);
+}
+
+#secondary{
+    font-family: var(--paragraphFont);
+}
+
+#main>a:not(.router-link-active){
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--textColor)
+}
+
+.router-link-exact-active{
+    text-decoration: underline solid var(--titleColor) 0.2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--titleColor)
+}
+
+
+#secondary>a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--textColor)
+}
+
+#main>a:hover, #secondary>a:hover{
+    color: var(--titleColor);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    padding: 0.5rem;
+    font-family: var(--paragraphFont);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+tr{
+    border-bottom: 0.1rem solid var(--titleColor);
+}
+
+td{
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    #main>a:not(.router-link-active){
+        font-size: 3rem;
+    }
+
+    .router-link-exact-active{
+        font-size: 3rem;
+    }
+
+    th{
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    tr{
+        border-bottom: 0.2rem solid var(--titleColor);
+    }
+
+    td{
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+}
+
+}
