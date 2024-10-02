@@ -8,3 +8,7 @@ Réalisation du site web pour l'entreprise AnthonyM.Coiffure durant le stage du 
  - Lancez l'application via la commande `npm run dev`
  - Maintenez control et cliquez sur l'url
  - Enjoy !
+
+# Infos supplémentaires
+
+Le site web n'est pas disponible en ligne et peut être largement amélioré.
